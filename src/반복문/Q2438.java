@@ -7,21 +7,20 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Q11021 {
+public class Q2438 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringTokenizer st;
-		
 		int num = Integer.parseInt(br.readLine());
-		for (int i = 1; i <= num; i++) {
-			st = new StringTokenizer(br.readLine());
-			int a = Integer.parseInt(st.nextToken());
-			int b = Integer.parseInt(st.nextToken());
-			System.out.println("Case #" +i+ ": " + (a+b) );
+		for (int i = 1 ; i <= num; i++ ) {
+			for (int k = num; k > i; k--) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			System.out.println();
 		}
-		bw.flush();
-		bw.close();
-		br.close();
 	}
 }

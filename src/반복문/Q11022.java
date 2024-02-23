@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Q11021 {
+public class Q11022 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -18,7 +18,7 @@ public class Q11021 {
 			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
-			System.out.println("Case #" +i+ ": " + (a+b) );
+			System.out.println("Case #" +i+ ": " + a+" + "+b+ " = " + (a+b) );
 		}
 		bw.flush();
 		bw.close();
